@@ -22,7 +22,7 @@ data:
           source: name
           direction: older
           timestring: '%Y.%m.%d'
-          unit: days
+          unit: minutes
           unit_count: 1
   config.yml: |-
     ---
