@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: log-generate-app
+  labels:
+    app: log-generate-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: log-generate-app
+  template:
+    metadata:
+      labels:
+        app: log-generate-app
+    spec:
+      containers:
+      - name: log-generate-app
+        image: turknethub/log-generate-app:v1
+        imagePullPolicy: Always
