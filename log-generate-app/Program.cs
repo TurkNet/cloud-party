@@ -6,7 +6,7 @@ class TURKNET {
         while (true)
         {
             System.Threading.Thread.Sleep(5000);
-            Console.WriteLine("Welcome Cloud Party!");
+            Console.WriteLine("Welcome to Cloud Party!");
         }
     }
 }
